@@ -23,3 +23,16 @@ fib(4_000_000)
 #4613732
 
 
+#Another way to accomplish that
+
+def fibo(x):
+    sum =0
+    a,b = 0,1
+    while b<x:
+        a,b = b,a+b
+        if a%2==0:
+            sum+=a
+    return sum
+
+fibo(4000000)
+#4613732
